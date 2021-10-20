@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập buổi 5 function</title>
+
+    <!-- BS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="ex1">
+        <div class="container">
+            <form>
+                <h1 class="pt-3">Bài 1</h1>
+                <div class="row pt-3">
+                    <div class="form-group col-4 py-3">
+                      <input type="number" class="form-control" id="inputBasisPoint" placeholder="Điểm chuẩn">
+                    </div>
+    
+                    <div class="form-group col-4 py-3">
+                        <select class="form-control" id="areaSelect">
+                          <option value="0">Chọn khu vực</option>
+                          <option value="2">A</option>
+                          <option value="1">B</option>
+                          <option value="0.5">C</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group col-4 py-3">
+                        <select class="form-control" id="objectSelect">
+                          <option value="0">Chọn đối tượng</option>
+                          <option value="2.5">1</option>
+                          <option value="1.5">2</option>
+                          <option value="1">3</option>
+                        </select>
+                    </div>
+                      
+                     <div class="form-group col-4 py-3">
+                        <input type="number" class="form-control" id="inputGrades1" placeholder="Điểm môn thi">
+                    </div>
+                      
+                    <div class="form-group col-4 py-3">
+                        <input type="number" class="form-control" id="inputGrades2" placeholder="Điểm môn thi">
+                    </div>
+                                      
+                    <div class="form-group col-4 py-3">
+                        <input type="number" class="form-control" id="inputGrades3" placeholder="Điểm môn thi">
+                    </div>
+
+                    <button type="button" class="btn btn-primary ml-3" id="btnEx1">Kết quả</button>
+    
+                    <div class="form-group col-6 pt-3">
+                        <input type="text" class="form-control" id="resultEx1" placeholder="Kết quả">
+                    </div>
+                </div>
+              </form>
+        </div>
+    </div>
+
+    <div class="ex2">
+        <div class="container">
+            <form>
+                <h1 class="pt-3">Bài 2</h1>
+                <div class="row pt-3">
+                    <div class="form-group col-6 py-3">
+                      <input type="text" class="form-control" id="inputNameEx2" placeholder="Nhập họ tên">
+                    </div>
+                      
+                     <div class="form-group col-6 py-3">
+                        <input type="number" class="form-control" id="inputKW" placeholder="Nhập số KW">
+                    </div>
+
+                    <button type="button" class="btn btn-primary ml-3" id="btnEx2">Tính tiền điện</button>
+    
+                    <div class="form-group col-6 pt-3">
+                        <input type="text" class="form-control" id="resultEx2" placeholder="Kết quả">
+                    </div>
+                </div>
+              </form>
+        </div>
+    </div>
+
+    <div class="ex3">
+        <div class="container">
+            <form>
+                <h1 class="pt-3">Bài 3</h1>
+                <div class="row pt-3">
+                    <div class="form-group col-4 py-3">
+                      <input type="text" class="form-control" id="intputNameEx3" placeholder="Nhập họ tên">
+                    </div>
+                      
+                     <div class="form-group col-4 py-3">
+                        <input type="number" class="form-control" id="inputToTalSalaryYear" placeholder="Tổng thu nhập năm">
+                    </div>
+                      
+                    <div class="form-group col-4 py-3">
+                        <input type="number" class="form-control" id="inputPeople" placeholder="Số người phụ thuộc">
+                    </div>
+
+                    <button type="button" class="btn btn-primary ml-3" id="btnEx3">Tính tiền thuế</button>
+    
+                    <div class="form-group col-6 pt-3">
+                        <input type="text" class="form-control" id="resultEx3" placeholder="Kết quả">
+                    </div>
+                </div>
+              </form>
+        </div>
+    </div>
+
+    <div class="ex4">
+        <div class="container">
+            <form>
+                <h1 class="pt-3">Bài 4</h1>
+                <div class="row pt-3">
+
+                    <div class="form-group col-3 py-3">
+                        <select class="form-control" id="loaiKhachHang">
+                          <option value="0">Chọn loại khách hàng</option>
+                          <option value="1">Nhà Dân</option>
+                          <option value="2">Doanh Nghiệp</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-3 py-3">
+                      <input type="text" class="form-control" id="maKhacHang" placeholder="Nhập mã khách hàng">
+                    </div>
+                      
+                    <div class="form-group col-3 py-3">
+                        <input type="number" class="form-control" id="soKenhCaoCap" placeholder="Số kênh cao cấp">
+                    </div>
+
+                    <div class="form-group col-3 py-3">
+                        <input type="number" class="form-control" id="soKetNoi" placeholder="Số kết nối" style="display: none;">
+                    </div>
+
+                    <button type="button" class="btn btn-primary ml-3" id="btnEx4">Tính tiền cáp</button>
+    
+                    <div class="form-group col-6 pt-3">
+                        <input type="text" class="form-control" id="resultEx4" placeholder="Kết quả">
+                    </div>
+                </div>
+              </form>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
